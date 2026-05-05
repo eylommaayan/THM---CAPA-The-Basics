@@ -160,7 +160,14 @@ HTTP Communication (מזהה C0002): יצירת תקשורת HTTP.
 
 Encode Data (מזהה C0026): יכולת לקודד נתונים, למשל בעזרת Base64 ו-XOR.
 
-בפלט הסופי של CAPA, גם ההתנהגויות וגם המיקרו-התנהגויות מופיעות תחת העמודה Behavior.
+בפלט הסופי של CAPA, גם ההתנהגויות וגם המיקרו-התנהגויות מופיעות תחת העמודה Behavior
+
+
+<img width="1230" height="798" alt="image" src="https://github.com/user-attachments/assets/64aa755c-c500-4da6-bc2c-b24d66359e2c" />
+
+
+<img width="1280" height="674" alt="image" src="https://github.com/user-attachments/assets/fd67fc06-023c-44eb-a5d3-01b0a1133e29" />
+.
 
 4. שיטות (Methods)
 מתודות קשורות להתנהגויות ומספקות פירוט ספציפי יותר (מעין תת-טכניקה).
