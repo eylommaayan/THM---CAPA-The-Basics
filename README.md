@@ -118,4 +118,5 @@ What is the Technique Identifier of Obfuscated Files or Information?
 <img width="1230" height="386" alt="image" src="https://github.com/user-attachments/assets/5a8ccd6a-2280-4456-8e4c-191cd83dcf8f" />
 
 
+<img width="1296" height="478" alt="image" src="https://github.com/user-attachments/assets/6610095f-f298-49c5-b0bd-140e5d3c85b9" />
 
