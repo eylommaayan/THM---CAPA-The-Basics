@@ -120,3 +120,45 @@ What is the Technique Identifier of Obfuscated Files or Information?
 
 <img width="1296" height="478" alt="image" src="https://github.com/user-attachments/assets/6610095f-f298-49c5-b0bd-140e5d3c85b9" />
 
+
+
+ניתוח תוצאות CAPA (חלק 2): קטלוג התנהגות נוזקות (MBC)
+MBC משמש כקטלוג של מטרות והתנהגויות של נוזקות. הוא יכול לקשר למתודות של ATT&CK ולתעד כל התנהגות ותכונת קוד שהתגלתה במהלך הניתוח.
+
+ב-CAPA, פלט ה-MBC מוצג בפורמטים הבאים:
+
+פורמט ללא מתודה: OBJECTIVE::Behavior::[Identifier] (לדוגמה: COMMUNICATION::HTTP Communication::[C0002]).
+
+פורמט עם מתודה (Method/Sub-technique): OBJECTIVE::Behavior::Method[Identifier] (לדוגמה: ANTI-STATIC ANALYSIS::Executable Code Obfuscation::Argument Obfuscation [B0032.020]).
+
+בואו נפרק את המושגים:
+
+1. מטרה (Objective)
+המטרות (Objectives) מבוססות על טקטיקות מ-ATT&CK בהקשר של התנהגות נוזקות, אף שלא כולן נכללות. הנה כמה דוגמאות בולטות:
+
+Anti-Behavioral Analysis: הנוזקה מנסה להתחמק מגילוי על ידי הפרעה לניתוח התנהגותי (למשל, זיהוי סביבות Sandbox או Debuggers).
+
+Anti-Static Analysis: הנוזקה מנסה להקשות על ניתוח סטטי (למשל על ידי ערפול קוד - Obfuscation) כדי למנוע מאנליסטים להבין את כוונותיה.
+
+Defense Evasion: עקיפת מנגנוני הגנה ואבטחה קיימים במערכת.
+
+2. תת-מטרה (Micro-Objective)
+אלו קטגוריות הקשורות ל"מיקרו-התנהגויות" - פעולות שמציגה התוכנה שלא בהכרח נחשבות "זדוניות" כשלעצמן (כמו הקצאת זיכרון), אך משמשות לעיתים קרובות את הנוזקה. בפלט של CAPA, תת-המטרות מופיעות תחת העמודה Objective. דוגמאות: PROCESS, MEMORY, COMMUNICATION, DATA.
+
+3. התנהגויות (MBC Behaviors) ומיקרו-התנהגויות (Micro-Behaviors)
+Behaviors: פעולות ברמת המאקרו (למשל: Virtual Machine Detection - זיהוי מכונה וירטואלית במזהה B0009, או Command and Scripting Interpreter - שימוש בשורת פקודה להרצת סקריפטים).
+
+Micro-Behaviors: פעולות ברמת ה-"Low-Level". כפי שצוין, גם אם הן לא נראות מזיקות (כמו יצירת סוקט TCP), בתוך הקשר של נוזקה הן חלק ממזימה גדולה יותר. דוגמאות בולטות:
+
+Create Process (מזהה C0017): יצירת תהליכים (Process) במערכת.
+
+HTTP Communication (מזהה C0002): יצירת תקשורת HTTP.
+
+Encode Data (מזהה C0026): יכולת לקודד נתונים, למשל בעזרת Base64 ו-XOR.
+
+בפלט הסופי של CAPA, גם ההתנהגויות וגם המיקרו-התנהגויות מופיעות תחת העמודה Behavior.
+
+4. שיטות (Methods)
+מתודות קשורות להתנהגויות ומספקות פירוט ספציפי יותר (מעין תת-טכניקה).
+
+לדוגמה: להתנהגות Encode Data יכולה להיות מתודה של Base64 (מזהה C0026.001) או XOR (מזהה C0026.002).
