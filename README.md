@@ -109,8 +109,13 @@ Downloader: כאשר CAPA מתייג קובץ כמוריד, הדבר מעיד ע
 
 
 <img width="1275" height="133" alt="image" src="https://github.com/user-attachments/assets/800d7d30-bb31-4aea-9fec-06822eddf97d" />
-
+What is the sha256 of cryptbot.bin?
 <img width="1304" height="348" alt="image" src="https://github.com/user-attachments/assets/a30ebc78-7f29-4b3c-a27b-3eb0ba5611ba" />
+
+
+
+What is the Technique Identifier of Obfuscated Files or Information?
+<img width="1230" height="386" alt="image" src="https://github.com/user-attachments/assets/5a8ccd6a-2280-4456-8e4c-191cd83dcf8f" />
 
 
 
