@@ -1,5 +1,8 @@
 # THM---CAPA-The-Basics
 
+
+<img width="933" height="416" alt="image" src="https://github.com/user-attachments/assets/2dea464f-0f24-4d47-9b7b-616e61f54093" />
+
 מבוא ל-CAPA: זיהוי יכולות זדוניות
 כשאתה מקבל קובץ חשוד (EXE, DLL או ELF), השאלה הראשונה שלך היא לא "איך הוא נכתב", אלא "מה הוא עושה?". האם הוא גונב סיסמאות? האם הוא מתקין Persistence (הישרדות במערכת)? האם הוא מצפין קבצים (Ransomware)?
 
